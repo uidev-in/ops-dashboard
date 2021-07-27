@@ -1,0 +1,97 @@
+.vendortable {
+    width: 100%;
+    border-collapse: separate !important;
+    margin-top: 0px!important;
+}
+.vendortable.table {
+    border-spacing: 0 0.5rem !important;
+}
+.vendortable.table td:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.vendortable.table td:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.vendortable thead tr th{
+    border: 0;
+    background: #354A5F;
+    color: #fff;
+}
+.vendortable thead tr th:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.vendortable thead tr th:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.vendortable tbody tr td {
+    background: #fff;
+   /*  background: #fff!important; */
+    color: #000;
+    border: 0;
+    padding: 1rem!important;
+    vertical-align: middle;
+    font-weight: normal;
+   /*  font-size: 1rem!important; */
+}
+.vendortable tbody tr {
+    border-radius: 10px;
+    /* -webkit-box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%) !important;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%) !important; */
+}
+.icon-shape {
+    padding: 12px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+}
+.bg-info {
+    background-color: #0dcaf0 !important;
+}
+.bg-green {
+    background-color: #20c997!important;
+}
+.bg-dark {
+    background-color: #212529 !important;
+}
+.text-dark {
+    color: #212529 !important;
+}
+
+
+.swal2-icon.swal2-info, .swal2-icon.swal2-question, .swal2-icon.swal2-warning{
+    font-size: 1rem!important;
+}
+
+table {
+  width: 100%;
+}
+thead, tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+tbody {
+  display: block;
+  overflow-y: auto;
+  table-layout: fixed;
+  max-height: 500px;
+}
+#tile-1 .shortlist-table .btn {
+    border-radius: 15px;
+    padding: .18rem .75rem !important;
+    font-size: 14px !important;
+    background: #20c997;
+    color: #fff;
+    font-weight: normal;
+}

@@ -1,0 +1,235 @@
+/*
+    DEMO STYLE
+*/
+
+body {
+   
+    background: #F3F4F7;
+} 
+
+ #wrap_sidebar .navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+ #wrap_sidebar .navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#wrap_sidebar #sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #fff;
+    color: #fff;
+    transition: all 0.3s;
+    /* z-index: -1; */
+}
+
+#wrap_sidebar #sidebar.active {
+    margin-left: -250px;
+}
+
+#wrap_sidebar #sidebar.active_sidebar {
+    margin-left: -250px;
+}
+
+#wrap_sidebar #sidebar .sidebar-header {
+    padding: 20px;
+    background: #ededed;
+}
+
+  
+.sidebar_menu ul { list-style-type: none; }
+
+
+.sidebar_menu .accordion {
+  width: 100%;
+  padding-left: 0px;
+  max-width: 360px;
+  margin: 0px auto 20px;
+  background: #FFF;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.sidebar_menu .accordion .link {
+  cursor: pointer;
+  display: block;
+  padding: 15px 15px 15px 20px;
+  color: #4D4D4D;
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: 1px solid #CCC;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.sidebar_menu .accordion li:last-child .link { border-bottom: 0; }
+
+.sidebar_menu .accordion li i {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  font-size: 18px;
+  color: #595959;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.sidebar_menu .accordion li i.fa-chevron-down {
+  right: 12px;
+  left: auto;
+  font-size: 13px;
+}
+
+
+.sidebar_menu .accordion li.open i.fa-chevron-down {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+
+
+/* .dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+} */
+
+.dropdown-toggle::after {
+    display: none;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+/**
+ * Submenu
+ -----------------------------*/
+
+
+ .sidebar_menu .submenu {
+    display: none;
+    /* background: #444359; */
+    font-size: 14px;
+    padding-left: 0px;
+  }
+  
+  .sidebar_menu .submenu li {
+    display: block;
+    text-decoration: none;
+    color: #4D4D4D;
+    padding: 1px;
+    padding-left: 25px;
+    font-size: 12.5px;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+  }
+  
+  
+  .sidebar_menu .custom-control-label::before {
+  
+  margin-top: 10px !important;
+  
+  }
+  
+  .sidebar_menu .custom-control-label::after {
+      margin-top: 10px !important;
+  }
+  .filter_icon{
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin: 0 10px 0 3px;
+      color: #4b4b5a;
+      fill: rgba(75,75,90,.12);
+  }
+  
+  .link span{
+      color: #4b4b5a;
+      font-size: 15px;
+      font-weight: 400;
+      border-left: 3px solid transparent;
+  }
+  .sidebar_menu .accordion .link:hover{
+
+      color: #5369f8 !important;
+      text-decoration: none;
+      background-color: #f7f7ff;
+  }
+/* -  MEDIAQUERIES for side bar - */
+
+/* @media (max-width: 768px) {
+    #wrap_sidebar #sidebar {
+        margin-left: -250px;
+        
+    }
+    #wrap_sidebar #sidebar.active {
+        margin-left: 0;
+    }
+    #wrap_sidebar #sidebarCollapse span {
+        display: none;
+    }
+} */
+
+/* lead update form */
+
+/* @media (max-width: 768px) {
+    #wrap_sidebar #sidebar {
+        margin-left: -250px;
+        
+    }
+    #wrap_sidebar #sidebar.active_sidebar {
+        margin-left: -250px;
+    }
+    #wrap_sidebar #sidebarCollapse span {
+        display: none;
+    }
+} */
