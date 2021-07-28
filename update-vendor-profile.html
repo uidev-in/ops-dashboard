@@ -53,6 +53,9 @@
   color:#FF912C;
 }
 
+.custom-control-label::after,.custom-control-label::before {
+    top: .15625rem!important;
+}
     </style>
 </head>
 
@@ -327,7 +330,7 @@
 
                                     <form class="form-horizontal">
                                         <div class="row">
-                                            <div class="col">
+                                            <div class="col-6">
                                                 <div class="form-group row">
                                                     <label class="col-lg-2 col-form-label" for="simpleinput">User</label>
                                                     <div class="col-lg-10">
@@ -425,15 +428,27 @@
                                                         </div>
                                                 </div>
 
+                                                <div class="form-group row">
+                                                    <label class="col-lg-2 col-form-label">Skills</label>
+                                                    <div class="col-lg-10">
+                                                        <input type="text" class="form-control" value="">
+                                                    </div>
+                                                </div>
 
+                                                <div class="form-group row">
+                                                    <label class="col-lg-2 col-form-label" for="vendor-company-portfolio">Portfolio</label>
+                                                    <div class="col-lg-10">
+                                                        <textarea class="form-control" rows="5" id="vendor-company-portfolio"></textarea>
+                                                    </div>
+                                                </div>
                                                 
                                             </div>
 
-                                            <div class="col">
+                                            <div class="col-6">
                                                 <div class="form-group row">
                                                     <label class="col-lg-2 col-form-label" for="example-fileinput">Image</label>
-                                                    <div class="col-lg-10">
-                                                        <input type="file" class="form-control" id="example-fileinput">
+                                                    <div class="col-lg-6">
+                                                        <input type="file" class="form-control border-0" id="example-fileinput">
                                                     </div>
                                                 </div>
 
@@ -545,7 +560,39 @@
                                                         </div>
                                                 </div>
 
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label">Steps Completed</label>
+                                                    <div class="col-lg-9">
+                                                        <input type="text" class="form-control" value="">
+                                                    </div>
+                                                </div>
 
+                                                <div class="form-group row">
+                                                    <label class="col-lg-2 col-form-label" for="vendor-key-clients">Key Clients</label>
+                                                    <div class="col-lg-10">
+                                                        <textarea class="form-control" rows="5" id="vendor-key-clients"></textarea>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="form-group ">
+                                                    <label  for="vendor-company-description">Notes</label>
+                                                        <textarea class="form-control" rows="5" id="vendor-company-description"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="custom-control custom-checkbox checkbox-success my-2">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
+                                                    <label class="custom-control-label" for="customCheck1">Verified Vendor</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 text-center">
+                                                <button type="reset" class="btn btn-outline-danger" style="box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);">Reset</button>
+                                                <button type="submit" class="btn btn-info mr-1 px-3"> Save</button>
                                             </div>
                                         </div>
                                     </form>
