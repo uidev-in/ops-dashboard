@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Shreyu - Admin & Dashboard Template</title>
+    <title>OPS - Dashboard | ExMyB</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
     <meta content="Coderthemes" name="author" />
@@ -77,39 +77,7 @@ i.custom-pencil {
                     </li>
                 </ul>
                 <ul class="navbar-nav flex-row ml-auto d-flex list-unstyled topnav-menu float-right mb-0">
-                    <li class="d-none d-sm-block">
-                        <div class="app-search">
-                            <form>
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search...">
-                                    <span data-feather="search"></span>
-                                </div>
-                            </form>
-                        </div>
-                    </li>
-                    <li class="dropdown d-none d-lg-block" data-toggle="tooltip" data-placement="left" title="Change language">
-                        <a class="nav-link dropdown-toggle mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                            <i data-feather="globe"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                <img src="assets/images/flags/germany.jpg" alt="user-image" class="mr-2" height="12"> <span class="align-middle">German</span>
-                            </a>
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                <img src="assets/images/flags/italy.jpg" alt="user-image" class="mr-2" height="12"> <span class="align-middle">Italian</span>
-                            </a>
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                <img src="assets/images/flags/spain.jpg" alt="user-image" class="mr-2" height="12"> <span class="align-middle">Spanish</span>
-                            </a>
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                <img src="assets/images/flags/russia.jpg" alt="user-image" class="mr-2" height="12"> <span class="align-middle">Russian</span>
-                            </a>
-                        </div>
-                    </li>
+                   
                     <li class="dropdown notification-list" data-toggle="tooltip" data-placement="left" title="8 new unread notifications">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                             <i data-feather="bell"></i>
@@ -226,6 +194,7 @@ i.custom-pencil {
                             </a>
                         </div>
                     </li>
+                    
                 </ul>
             </div>
         </div>
@@ -236,7 +205,7 @@ i.custom-pencil {
                 <img src="assets/images/users/avatar-7.jpg" class="avatar-sm rounded-circle mr-2" alt="Shreyu" />
                 <img src="assets/images/users/avatar-7.jpg" class="avatar-xs rounded-circle mr-2" alt="Shreyu" />
                 <div class="media-body">
-                    <h6 class="pro-user-name mt-0 mb-0">Nik Patel</h6>
+                    <h6 class="pro-user-name mt-0 mb-0">Sourabh</h6>
                     <span class="pro-user-desc">Administrator</span>
                 </div>
                 <div class="dropdown align-self-center profile-dropdown-menu">
@@ -330,9 +299,15 @@ i.custom-pencil {
         <div class="content-page">
             <div class="content">
                 <div class="container-fluid">
-                    <div class="row page-title align-items-center">
-                        <div class="col-sm-4 col-xl-6">
-                            <h4 class="mb-1 mt-0">Dashboard</h4>
+                    <div class="row page-title">
+                        <div class="col-md-12">
+                            <nav aria-label="breadcrumb" class="float-right mt-1">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Vendor Profile</li>
+                                </ol>
+                            </nav>
+                            <h4 class="mb-1 mt-0">Vendor Profile</h4>
                         </div>
                     </div>
                     <div class=" top_btn_div_2 mr-5 mb-3" style="float: right;">
@@ -363,8 +338,8 @@ i.custom-pencil {
                                 <div id="example_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
                                     <table id="example" class="table table-striped table-bordered dataTable display nowrap" cellspacing="0" width="100%" role="grid" aria-describedby="example_info" style="width: 100%;">
                                         <thead>
-                                            <tr role="row">
-                                                <th class="name sorting_asc check_click ml-1" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 156px;">
+                                            <tr role="row ">
+                                                <th class="name sorting_asc check_click ml-1 " tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 156px;">
                                                     <div class="custom-control custom-checkbox ">
                                                         <input type="checkbox" class="custom-control-input table_check" id="checkAll" name="data0" onblur="saveData(event,'name','2')"><label class="custom-control-label" for="checkAll"></label></div>
                                                 </th>
@@ -374,8 +349,8 @@ i.custom-pencil {
                                                 <th class="age sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 156px;">Phone </th>
                                                 <th class="age sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 156px;">Created </th>
                                                 <th class="age sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 156px;">Updated  </th>
-                                                 <th class="age sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 156px;">VERIFIED</th>
-                                                  <th class="age sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 156px;">REVIEW LINK</th>
+                                                 <th class="age sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 156px;">Verfied</th>
+                                                  <th class="age sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 156px;">Review</th>
                                                 <!-- <th class="start_date sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending" style="width: 156px;">Start date</th> -->
                                                 <!-- <th class="area sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending" style="width: 40px;">Start date</th> -->
                                             </tr>
@@ -407,8 +382,12 @@ i.custom-pencil {
                                 </td>
                                  <td><input class="editable_data" type="date" name="data5" id="data5" value="2018-07-22" min="2018-01-01" max="2035-12-31" disabled="disabled" onblur="saveData(event,'dob',value)"><span style="display:none">2011/04/25</span>
                                 </td>
-                                <td></td>
-                                <td class="text-center"><button class="btn btn-info">Add Review</button></td>
+                                <td>
+                                    <div class="icon-item">
+                                        <i class='uil uil-check-circle text-success'> Verfied</i>
+                                     </div>
+                                 </td>
+                                <td class="text-center"><button class="btn btn-info"> Add Review</button></td>
                             </tr>
                             <tr id="row1" role="row" class="even">
                                  <td class="sorting_1">
@@ -425,7 +404,11 @@ i.custom-pencil {
                                 </td>
                                  <td><input class="editable_data" type="date" name="data5" id="data5" value="2018-07-22" min="2018-01-01" max="2035-12-31" disabled="disabled" onblur="saveData(event,'dob',value)"><span style="display:none">2011/04/25</span>
                                 </td>
-                                <td></td>
+                                <td>
+                                    <div class="icon-item">
+                                        <i class='uil uil-times-circle text-danger'> Cancel</i>
+                                     </div>
+                                </td>
                                 <td class="text-center"><button class="btn btn-info">Add Review</button></td>
                                     
                                 
@@ -588,7 +571,7 @@ i.custom-pencil {
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
-                            2019 &copy; Shreyu. All Rights Reserved. Crafted with <i class='uil uil-heart text-danger font-size-12'></i> by <a href="https://coderthemes.com" target="_blank">Coderthemes</a>
+                            2021 &copy; ExMyB. All Rights Reserved. 
                         </div>
                     </div>
                 </div>
