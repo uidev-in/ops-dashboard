@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Vendor - Upload Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css"
+         integrity="sha512-DD6Lm09YDHzhW3K4eLJ9Y7sFrBwtCF+KuSWOLYFqKsZ6RX4ifCu9vWqM4R+Uy++aBWe6wD4csgQRzGKp5vP6tg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- App css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+   
+    <link rel="stylesheet" href="assets/css/custom-theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendor-table.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/client-review.css">
+    <style type="text/css">
+        .tableFixHead .custom-control{  
+          justify-content: flex-end;
+        }
+        .tableFixHead thead th:first-child, tr td:first-child {
+         width: 75px !important;
+        }
+        /*.tableFixHead thead th:nth-child(2), tr td:nth-child(2) {
+         width: 75px !important;
+        }*/
+    </style>
+</head>
+
+<body>
+    <!-- Begin page -->
+    <div id="wrapper">
+        <!-- Topbar Start -->
+        <div class="navbar navbar-expand flex-column flex-md-row navbar-custom fixed-top">
+            <div class="container-fluid">
+                <!-- LOGO -->
+               <a href="index.html" class="navbar-brand mr-0 mr-md-2 logo mb-2">
+                    <span class="logo-lg">
+                        <img src="assets/images/exmyb_logo.png" alt="ExMyB" width="100">
+                        <!-- <span class="d-inline h5 ml-1 text-logo">ExMyB</span> -->
+                    </span>
+                   
+                    </a>
+                <ul class="navbar-nav bd-navbar-nav flex-row list-unstyled menu-left mb-0">
+                    <li class="">
+                        <button class="button-menu-mobile open-left disable-btn">
+                            <i data-feather="menu" class="menu-icon"></i>
+                            <i data-feather="x" class="close-icon"></i>
+                        </button>
+                    </li>
+                </ul>
+                <ul class="navbar-nav flex-row ml-auto d-flex list-unstyled topnav-menu float-right mb-0">
+                   
+                    <li class="dropdown notification-list" data-toggle="tooltip" data-placement="left" title="8 new unread notifications">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            <i data-feather="bell"></i>
+                            <span class="noti-icon-badge"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+                            <!-- item-->
+                            <div class="dropdown-item noti-title border-bottom">
+                                <h5 class="m-0 font-size-16">
+                                    <span class="float-right">
+                                        <a href="" class="text-dark">
+                                            <small>Clear All</small>
+                                        </a>
+                                    </span>Notification
+                                </h5>
+                            </div>
+                            <div class="slimscroll noti-scroll">
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item border-bottom">
+                                    <div class="notify-icon bg-primary"><i class="uil uil-user-plus"></i></div>
+                                    <p class="notify-details">New user registered.<small class="text-muted">5 hours ago</small>
+                                    </p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item border-bottom">
+                                    <div class="notify-icon">
+                                        <img src="assets/images/users/avatar-1.jpg" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <p class="notify-details">Karen Robinson</p>
+                                    <p class="text-muted mb-0 user-msg">
+                                        <small>Wow ! this admin looks good and awesome design</small>
+                                    </p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item border-bottom">
+                                    <div class="notify-icon">
+                                        <img src="assets/images/users/avatar-2.jpg" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <p class="notify-details">Cristina Pride</p>
+                                    <p class="text-muted mb-0 user-msg">
+                                        <small>Hi, How are you? What about our next meeting</small>
+                                    </p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item border-bottom active">
+                                    <div class="notify-icon bg-success"><i class="uil uil-comment-message"></i> </div>
+                                    <p class="notify-details">Jaclyn Brunswick commented on Dashboard<small class="text-muted">1
+                                            min
+                                            ago</small></p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item border-bottom">
+                                    <div class="notify-icon bg-danger"><i class="uil uil-comment-message"></i></div>
+                                    <p class="notify-details">Caleb Flakelar commented on Admin<small class="text-muted">4 days
+                                            ago</small></p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-primary">
+                                        <i class="uil uil-heart"></i>
+                                    </div>
+                                    <p class="notify-details">Carlos Crouch liked
+                                        <b>Admin</b>
+                                        <small class="text-muted">13 days ago</small>
+                                    </p>
+                                </a>
+                            </div>
+                            <!-- All-->
+                            <a href="javascript:void(0);" class="dropdown-item text-center text-primary notify-item notify-all border-top">
+                                View all
+                                <i class="fi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="dropdown notification-list" data-toggle="tooltip" data-placement="left" title="Settings">
+                        <a href="javascript:void(0);" class="nav-link right-bar-toggle">
+                            <i data-feather="settings"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown notification-list align-self-center profile-dropdown">
+                        <a class="nav-link dropdown-toggle nav-user mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            <div class="media user-profile ">
+                                <img src="assets/images/users/avatar-7.jpg" alt="user-image" class="rounded-circle align-self-center" />
+                                <div class="media-body text-left">
+                                    <h6 class="pro-user-name ml-2 my-0">
+                                        <span>Shreyu N</span>
+                                        <span class="pro-user-desc text-muted d-block mt-1">Administrator </span>
+                                    </h6>
+                                </div>
+                                <span data-feather="chevron-down" class="ml-2 align-self-center"></span>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu profile-dropdown-items dropdown-menu-right">
+                            <a href="pages-profile.html" class="dropdown-item notify-item">
+                                <i data-feather="user" class="icon-dual icon-xs mr-2"></i>
+                                <span>My Account</span>
+                            </a>
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i data-feather="settings" class="icon-dual icon-xs mr-2"></i>
+                                <span>Settings</span>
+                            </a>
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i data-feather="help-circle" class="icon-dual icon-xs mr-2"></i>
+                                <span>Support</span>
+                            </a>
+                            <a href="pages-lock-screen.html" class="dropdown-item notify-item">
+                                <i data-feather="lock" class="icon-dual icon-xs mr-2"></i>
+                                <span>Lock Screen</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i data-feather="log-out" class="icon-dual icon-xs mr-2"></i>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- end Topbar -->
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="left-side-menu">
+            <div class="media user-profile mt-2 mb-2">
+                <img src="assets/images/users/avatar-7.jpg" class="avatar-sm rounded-circle mr-2" alt="Shreyu" />
+                <img src="assets/images/users/avatar-7.jpg" class="avatar-xs rounded-circle mr-2" alt="Shreyu" />
+                <div class="media-body">
+                    <h6 class="pro-user-name mt-0 mb-0">Sourabh</h6>
+                    <span class="pro-user-desc">Administrator</span>
+                </div>
+                <div class="dropdown align-self-center profile-dropdown-menu">
+                    <a class="dropdown-toggle mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        <span data-feather="chevron-down"></span>
+                    </a>
+                    <div class="dropdown-menu profile-dropdown">
+                        <a href="pages-profile.html" class="dropdown-item notify-item">
+                            <i data-feather="user" class="icon-dual icon-xs mr-2"></i>
+                            <span>My Account</span>
+                        </a>
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i data-feather="settings" class="icon-dual icon-xs mr-2"></i>
+                            <span>Settings</span>
+                        </a>
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i data-feather="help-circle" class="icon-dual icon-xs mr-2"></i>
+                            <span>Support</span>
+                        </a>
+                        <a href="pages-lock-screen.html" class="dropdown-item notify-item">
+                            <i data-feather="lock" class="icon-dual icon-xs mr-2"></i>
+                            <span>Lock Screen</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i data-feather="log-out" class="icon-dual icon-xs mr-2"></i>
+                            <span>Logout</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-content">
+                <!--- Sidemenu -->
+                <div id="sidebar-menu" class="slimscroll-menu">
+                    <ul class="metismenu" id="menu-bar">
+                        <li class="menu-title">Navigation</li>
+                        <li>
+                            <a href="#">
+                                <i data-feather="home"></i>
+                                <span class="badge badge-success float-right">1</span>
+                                <span> Dashboard </span>
+                            </a>
+                        </li>
+                        <li class="menu-title">Apps</li>
+                        <li>
+                            <a href="#">
+                                <i data-feather="bookmark"></i>
+                                <span> Task -1 </span>
+                            </a>
+                        </li>
+
+                         <li>
+                            <a href="#">
+                                <i data-feather="bookmark"></i>
+                                <span> Task -1 </span>
+                            </a>
+                        </li>
+
+                         <li>
+                            <a href="#">
+                                <i data-feather="bookmark"></i>
+                                <span> Task -1 </span>
+                            </a>
+                        </li>
+                       <li class="menu-title">Apps</li>
+                         <li>
+                            <a href="#">
+                                <i data-feather="bookmark"></i>
+                                <span> Task -1 </span>
+                            </a>
+                        </li>
+
+                         <li>
+                            <a href="#">
+                                <i data-feather="bookmark"></i>
+                                <span> Task -1 </span>
+                            </a>
+                        </li>
+                       
+                    </ul>
+                </div>
+                <!-- End Sidebar -->
+                <div class="clearfix"></div>
+            </div>
+            <!-- Sidebar -left -->
+        </div>
+        <!-- Left Sidebar End -->
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <div class="content">
+                <div class="container-fluid">
+                    <!-- breadcrumb -->
+                    <div class="row page-title">
+                        <div class="col-md-12">
+                            <nav aria-label="breadcrumb" class="float-right mt-1">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                                    <li class="breadcrumb-item" aria-current="page"><a href="All-Vendors.html">Vendor Profile</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Upload Profile</li>
+                                </ol>
+                            </nav>
+                            <h4 class="mb-1 mt-0">Vendor Profile</h4>
+                        </div>
+                    </div>
+                    <!-- breadcrumb -->
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-pills navtab-bg nav-justified mb-4">
+                        <li class="nav-item">
+                            <a href="vendor-basic-details.html"  class="nav-link">
+                                <span class="d-block d-sm-none"><i class="uil-home-alt"></i></span>
+                                <span class="d-none d-sm-block">Basic Details</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <span class="d-block d-sm-none"><i class="uil-user"></i></span>
+                                <span class="d-none d-sm-block">Service Offered</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="upload_portfolio.html" class="nav-link">
+                                <span class="d-block d-sm-none"><i class="uil-envelope"></i></span>
+                                <span class="d-none d-sm-block">Upload Profile</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <span class="d-block d-sm-none"><i class="uil-home-alt"></i></span>
+                                <span class="d-none d-sm-block">Portfolio</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="client-review.html" class="nav-link  active">
+                                <span class="d-block d-sm-none"><i class="uil-user"></i></span>
+                                <span class="d-none d-sm-block">Client Review</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#messages1" class="nav-link">
+                                <span class="d-block d-sm-none"><i class="uil-envelope"></i></span>
+                                <span class="d-none d-sm-block">Sales Review</span>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <!-- main Content -->
+                    <div class="row">
+                        <div class="col-12">
+                             <div class="form-listed-table px-5 mt-5">
+                        <div class="table-responsive text-center tableFixHead">
+                            <!--Table-->
+                                <table id="vendortable" class="table table-fixed vendortable  ">
+                                <!--Table head-->
+                                <thead>
+                                    <tr>
+                                        <th>Sr.No</th>
+                                        <th>Client Name</th>
+                                        <th>Service</th>
+                                        <th>Budget</th>
+                                        <th>Rating</th>
+                                        <th>Review</th>
+                                     
+                                    </tr>
+                                </thead>
+                                <!--Table head-->
+                                <!--Table body-->
+                                <tbody data-simplebar>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Sankit</td>
+                                        <td>WebApp</td>
+                                        <td>20L</td>
+                                        <td>Good</td>
+                                        <td><a href="javascript:void(0)" class="btn btn-success"  data-toggle="modal" data-target="#bs-example-modal-lg">Review</a></td>
+                                    </tr>
+
+                                       <tr>
+                                        <td>2</td>
+                                        <td>Sankit</td>
+                                        <td>WebApp</td>
+                                        <td>20L</td>
+                                        <td>Good</td>
+                                        <td><a href="javascript:void(0)" class="btn btn-success"  data-toggle="modal" data-target="#bs-example-modal-lg">Review</a></td>
+                                    </tr>
+
+                                       <tr>
+                                        <td>3</td>
+                                        <td>Sankit</td>
+                                        <td>WebApp</td>
+                                        <td>20L</td>
+                                        <td>Good</td>
+                                        <td><a href="javascript:void(0)" class="btn btn-success"  data-toggle="modal" data-target="#bs-example-modal-lg">Review</a></td>
+                                    </tr>
+
+                                       <tr>
+                                        <td>4</td>
+                                        <td>Sankit</td>
+                                        <td>WebApp</td>
+                                        <td>20L</td>
+                                        <td>Good</td>
+                                        <td><a href="javascript:void(0)" class="btn btn-success"  data-toggle="modal" data-target="#bs-example-modal-lg">Review</a></td>
+                                    </tr>
+
+                                       <tr>
+                                        <td>5</td>
+                                        <td>Sankit</td>
+                                        <td>WebApp</td>
+                                        <td>20L</td>
+                                        <td>Good</td>
+                                        <td><a href="javascript:void(0)" class="btn btn-success"  data-toggle="modal" data-target="#bs-example-modal-lg">Review</a></td>
+                                    </tr>
+
+
+                                       <tr>
+                                        <td>6</td>
+                                        <td>Sankit</td>
+                                        <td>WebApp</td>
+                                        <td>20L</td>
+                                        <td>Good</td>
+                                        <td><a href="javascript:void(0)" class="btn btn-success"  data-toggle="modal" data-target="#bs-example-modal-lg">Review</a></td>
+                                    </tr>
+
+
+                                       <tr>
+                                        <td>7</td>
+                                        <td>Sankit</td>
+                                        <td>WebApp</td>
+                                        <td>20L</td>
+                                        <td>Good</td>
+                                        <td><a href="javascript:void(0)" class="btn btn-success"  data-toggle="modal" data-target="#bs-example-modal-lg">Review</a></td>
+                                    </tr>
+
+
+                                       <tr>
+                                        <td>8</td>
+                                        <td>Sankit</td>
+                                        <td>WebApp</td>
+                                        <td>20L</td>
+                                        <td>Good</td>
+                                        <td><a href="javascript:void(0)" class="btn btn-success"  data-toggle="modal" data-target="#bs-example-modal-lg">Review</a></td>
+                                    </tr>
+
+
+                                       <tr>
+                                        <td>9</td>
+                                        <td>Sankit</td>
+                                        <td>WebApp</td>
+                                        <td>20L</td>
+                                        <td>Good</td>
+                                        <td><a href="javascript:void(0)" class="btn btn-success"  data-toggle="modal" data-target="#bs-example-modal-lg">Review</a></td>
+                                    </tr>
+
+
+
+                                       <tr>
+                                        <td>10</td>
+                                        <td>Sankit</td>
+                                        <td>WebApp</td>
+                                        <td>20L</td>
+                                        <td>Good</td>
+                                        <td><a href="javascript:void(0)" class="btn btn-success"  data-toggle="modal" data-target="#bs-example-modal-lg">Review</a></td>
+                                    </tr>
+
+
+                                       <tr>
+                                        <td>11</td>
+                                        <td>Sankit</td>
+                                        <td>WebApp</td>
+                                        <td>20L</td>
+                                        <td>Good</td>
+                                        <td><a href="javascript:void(0)" class="btn btn-success"  data-toggle="modal" data-target="#bs-example-modal-lg">Review</a></td>
+                                    </tr>
+                                </tbody>
+                                <!--Table body-->
+                            </table>
+                            <!--Table-->
+                        </div>
+                    </div>
+                   
+                        </div>
+                    </div>
+                    <!-- main Content -->
+                    <div class="modal fade" id="bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" style="display: none;" aria-hidden="true">
+                   <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="">
+                            <!-- <h5 class="modal-title" id="myLargeModalLabel">Task Details</h5> -->
+                            <button type="button" class="close float-right pr-3 pt-3" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="px-3">
+                     <center>
+                        <img src="assets/images/exmyb_logo.png" width="130" height="50"><br>
+                        <h3 style="text-align: end;" class="vendoe-name">Sankit</h3>
+                     </center>
+                     <div class="tooltipSection">
+                        <div class="_tooltip progress-top">0%</div>
+                        <div class="progress">
+                           <div class="determinate progress-bar">
+                           </div>
+                        </div>
+                        <div class="progressBottomTxt">
+                           <div class="_left">
+                              Raised: <span class="progress-top">0%</span>
+                           </div>
+                           <div class="_right">
+                              Goal: <span>100%</span>
+                           </div>
+                        </div>
+                     </div>
+                     <form method="POST" class="mt-5" id="form">
+                     
+                      
+                        <input type="hidden" name="profile_id" id="profile_id" value="sourabh"/>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <p>What is your name and the name of the company you are representing? </p>
+                           </div>
+                           <div class="col-md-6 form-group" style="margin-bottom: 36px;">
+                              <input class="effect-1 input-value" name="your_name_and_noc" type="text" placeholder="Eg.John Doe & Exmyb" required>
+                              <span class="focus-border"></span>
+                           </div>
+                        </div>
+                        <!-----  start datepicker ------->
+                        <div class="row">
+                           <div class="col-md-6">
+                              <p>What date was the project started? Calender(Month & Year)</p>
+                           </div>
+                           <div class="form-group col-lg-6 col-m mb-4">
+                                <span class="input-group-append">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                </span>
+                             
+                                  <input id="datepicker"  type="text" name="project_start_date"  class="effect-1" placeholder="2020-12-01" required="" value="" >
+                                  <span class="focus-border"></span>
+                              
+                              </div>
+                        </div>
+                     
+
+                        <!--  end datepicker section ----> 
+                        <div class="row">
+                           <div class="col-md-6">
+                              <p>What was the nature of the project? </p>
+                           </div>
+                           <div class="col-md-6 form-group">
+                              <input class="effect-1 input-value" name="nature_of_project" type="text" placeholder="Eg. Web Application, Mobile Application" required="">
+                              <span class="focus-border"></span>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <p class="star-para">Quality of work? </p>
+                           </div>
+                           <div class="col-md-6 stars">
+                              
+                              
+                              <input class="stars__checkbox" type="radio" id="fifth-star-1" name="quality_of_work" value="5">
+                              <label class="stars__star" for="fifth-star-1">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_15"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="fourth-star-1" name="quality_of_work" value="4">
+                              <label class="stars__star" for="fourth-star-1">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_14"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="third-star-1" name="quality_of_work" value="3">
+                              <label class="stars__star" for="third-star-1">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_13"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="second-star-1" name="quality_of_work" value="2">
+                              <label class="stars__star" for="second-star-1">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_12"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="first-star-1" name="quality_of_work" value="1" required>
+                              <label class="stars__star" for="first-star-1">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_11"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+
+                              
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <p class="star-para">Timeliness of vendor?</p>
+                           </div>
+                           <div class="col-md-6 stars">
+                              <input class="stars__checkbox" type="radio" id="first-star-2" name="timeliness_of_vendor" value="5" required>
+                              <label class="stars__star" for="first-star-2">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_2"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="second-star-2" name="timeliness_of_vendor" value="4">
+                              <label class="stars__star" for="second-star-2">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_2"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="third-star-2" name="timeliness_of_vendor" value="3">
+                              <label class="stars__star" for="third-star-2">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_2"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="fourth-star-2" name="timeliness_of_vendor" value="2">
+                              <label class="stars__star" for="fourth-star-2">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_2"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="fifth-star-2" name="timeliness_of_vendor" value="1">
+                              <label class="stars__star" for="fifth-star-2">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_2"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <p class="star-para">Communication skills of vendor? </p>
+                           </div>
+                           <div class="col-md-6 stars">
+                              <input class="stars__checkbox" type="radio" id="first-star-3" name="communication_skills_of_vendor" value="5" required>
+                              <label class="stars__star" for="first-star-3">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="second-star-3" name="communication_skills_of_vendor" value="4">
+                              <label class="stars__star" for="second-star-3">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="third-star-3" name="communication_skills_of_vendor" value="3">
+                              <label class="stars__star" for="third-star-3">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="fourth-star-3" name="communication_skills_of_vendor" value="2">
+                              <label class="stars__star" for="fourth-star-3">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="fifth-star-3" name="communication_skills_of_vendor" value="1">
+                              <label class="stars__star" for="fifth-star-3">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <p class="star-para">Involvement of vendor? </p>
+                           </div>
+                           <div class="col-md-6 stars">
+                              <input class="stars__checkbox" type="radio" id="first-star-4" name="involvement_of_vendor" value="5" required>
+                              <label class="stars__star" for="first-star-4">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="second-star-4" name="involvement_of_vendor" value="4">
+                              <label class="stars__star" for="second-star-4">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="third-star-4" name="involvement_of_vendor" value="3">
+                              <label class="stars__star" for="third-star-4">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="fourth-star-4" name="involvement_of_vendor" value="2">
+                              <label class="stars__star" for="fourth-star-4">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="fifth-star-4" name="involvement_of_vendor" value="1">
+                              <label class="stars__star" for="fifth-star-4">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <p class="star-para">Overall experience of vendor?</p>
+                           </div>
+                           <div class="col-md-6 stars">
+                              <input class="stars__checkbox" type="radio" id="first-star-5" name="overall_experience_of_vendor" value="5" required>
+                              <label class="stars__star" for="first-star-5">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="second-star-5" name="overall_experience_of_vendor" value="4">
+                              <label class="stars__star" for="second-star-5">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="third-star-5" name="overall_experience_of_vendor" value="3">
+                              <label class="stars__star" for="third-star-5">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="fourth-star-5" name="overall_experience_of_vendor" value="2">
+                              <label class="stars__star" for="fourth-star-5">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="fifth-star-5" name="overall_experience_of_vendor" value="1">
+                              <label class="stars__star" for="fifth-star-5">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <p class="star-para">Overall experience of ExMyB & Key Account Manager?</p>
+                           </div>
+                           <div class="col-md-6 stars">
+                              <input class="stars__checkbox" type="radio" id="first-star-6" name="overall_experience_of_exmyb_and_kam" value="5" required>
+                              <label class="stars__star" for="first-star-6">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="second-star-6" name="overall_experience_of_exmyb_and_kam" value="4">
+                              <label class="stars__star" for="second-star-6">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="third-star-6" name="overall_experience_of_exmyb_and_kam" value="3">
+                              <label class="stars__star" for="third-star-6">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="fourth-star-6" name="overall_experience_of_exmyb_and_kam" value="2">
+                              <label class="stars__star" for="fourth-star-6">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="fifth-star-6" name="overall_experience_of_exmyb_and_kam" value="1">
+                              <label class="stars__star" for="fifth-star-6">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <p class="star-para">How likely to recommend ExMyB ?</p>
+                           </div>
+                           <div class="col-md-6 stars">
+                              <input class="stars__checkbox" type="radio" id="first-star-7" name="recommend_exmyb" value="5" required>
+                              <label class="stars__star" for="first-star-7">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="second-star-7" name="recommend_exmyb" value="4">
+                              <label class="stars__star" for="second-star-7">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="third-star-7" name="recommend_exmyb" value="3">
+                              <label class="stars__star" for="third-star-7">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="fourth-star-7" name="recommend_exmyb" value="2">
+                              <label class="stars__star" for="fourth-star-7">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                              <input class="stars__checkbox" type="radio" id="fifth-star-7" name="recommend_exmyb" value="1">
+                              <label class="stars__star" for="fifth-star-7">
+                                 <svg class="stars__star-icon" version="1.1" id="Capa_1"  x="0px" y="0px" viewBox="0 0 53.867 53.867" style="enable-background:new 0 0 53.867 53.867;" xml:space="preserve">
+                                    <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 
+                                       10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 " />
+                                 </svg>
+                              </label>
+                           </div>
+                        </div>
+                        <!------------ end star section ----------------->
+                        
+                        <div class="row">
+                           <div class="col-md-6">
+                              <p>Would you work with this vendor again? </p>
+                           </div>
+                           <div class="col-md-6 form-group form-check customRadio">
+                              <input class="form-check-input mr-5 check condition" type="radio" name="work_again" id="exampleRadios1" value="option1" required>
+                              <label class="form-check-label" for="exampleRadios1">
+                              <strong class="radio-yes-label">YES</strong>
+                              </label>
+                              <input class="form-check-input check condition" type="radio" name="work_again" id="exampleRadios2" value="">
+                              <label class="form-check-label" for="exampleRadios2">
+                              <strong>NO</strong>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6 star-para">
+                              <!-- <p>Please specify reason </p> -->
+                           </div>
+                           <div class="col-md-6 form-group" id="impressive_about_vendor_textarea" style="display: none;">
+                              <textarea name="impressive_about_vendor" cols="4" class="effect-1 textarea-input input-value" style="height: 30px!important;" type="text" placeholder="Write Something..." required></textarea> 
+                              <span class="focus-border"></span>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <p>Could you provide any shareable link of the work that was done? </p>
+                           </div>
+                           <div class="col-md-6 form-group">
+                              <input name="shareable_link" class="effect-1 input-value" type="text" placeholder="https://exmyb.com/ , https://exmyb.com/blog/" >
+                              <span class="focus-border"></span>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <p>Why did you select/shortlist the vendor? </p>
+                           </div>
+                           <div class="col-md-6 form-group">
+                              <input name="why_shortlist_this_vendor" class="effect-1 input-value" type="text" placeholder="" required>
+                              <span class="focus-border"></span>
+                           </div>
+                        </div>
+                        <button class="btn btn-success">Submit</button>
+                     </form>
+                  </div>
+                        
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div>
+                   
+                </div>
+            </div> <!-- content -->
+            <!-- Footer Start -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            2021 &copy; ExMyB. All Rights Reserved. 
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end Footer -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- END wrapper -->
+    <!-- Vendor js -->
+    <script src="assets/js/vendor.min.js"></script>
+    <!-- optional plugins -->
+    <script src="assets/libs/moment/moment.min.js"></script>
+    <!-- page js -->
+    <script src="assets/js/pages/dashboard.init.js"></script>
+    <!-- App js -->
+    <script src="assets/js/app.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+      <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> -->
+      <script type="text/javascript" src="assets/js/client-review.js"></script>
+    
+     <script type="text/javascript">
+         
+    // ------  search filter
+
+    function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("file_search");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("search_result");
+    li = ul.getElementsByClassName("filterValue");
+    for (i = 0; i < li.length; i++) {
+       
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].parentNode.parentNode.parentNode.parentNode.style.display = "";
+        } else {
+            li[i].parentNode.parentNode.parentNode.parentNode.style.display = "none";
+        }
+    }
+}
+    $("#datepicker").datepicker({format: "yyyy-mm-dd"});
+     </script>
+</body>
+
+</html>
