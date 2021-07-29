@@ -48,7 +48,7 @@
          border-color: #82C424;
          display: block;
          margin: 20px auto;
-         border-radius: 25px;
+         /* border-radius: 25px; */
          font-size: 17px;
          padding: 5px 25px 5px 25px;
          }
