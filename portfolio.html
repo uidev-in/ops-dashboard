@@ -3,14 +3,15 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>OPS - Dashboard | ExMyB</title>
+    <title>Vendor - Portfolio | ExMyB</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
     <meta content="Coderthemes" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css"
+         integrity="sha512-DD6Lm09YDHzhW3K4eLJ9Y7sFrBwtCF+KuSWOLYFqKsZ6RX4ifCu9vWqM4R+Uy++aBWe6wD4csgQRzGKp5vP6tg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- plugins -->
     <!-- <link href="assets/libs/flatpickr/flatpickr.min.css" rel="stylesheet" type="text/css" /> -->
@@ -21,48 +22,13 @@
     <!-- <link rel="stylesheet" href="assets/css/sidebar.css"> -->
     <link rel="stylesheet" href="assets/css/custom-theme.css">
     <style type="text/css">
-    .card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    border-radius: 0.375rem;
-}
-.card-stats .card-body {
-    padding: 1rem 1.5rem;
-}
-.icon-shape {
-    padding: 12px;
-    text-align: center;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-}
-
-.icon {
-    width: 3rem;
-    height: 3rem;
-}
-.icon-shape i, .icon-shape svg {
-    font-size: 1rem;
-}
-
-.card-title {
-    margin-bottom: 1.25rem;
-}
-h5, .h5 {
-    font-size: 0.8125rem;
-}
-
-
-h2, .h2 {
-    font-size: 1.25rem;
-}
+        table th {
+            padding: .75rem!important;
+            vertical-align: top!important;
+            border-top: 1px solid #f6f6f7!important;
+            background-color: #fff!important;
+            color: #6c757d!important
+        }
     </style>
 </head>
 
@@ -262,53 +228,40 @@ h2, .h2 {
                             </a>
                         </li>
                         <li class="menu-title">Apps</li>
-
                         <li>
-                            <a href="javascript: void(0);">
-                                <i data-feather="award"></i>
-                                <span> Industry </span>
-                                <span class="menu-arrow"></span>
+                            <a href="#">
+                                <i data-feather="bookmark"></i>
+                                <span> Task -1 </span>
                             </a>
-                            <ul class="nav-second-level" aria-expanded="false">
-                                <li>
-                                    <a href="javascript:void(0);">Sub Industry 1</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">Sub Industry 2</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="javascript: void(0);">
-                                <i data-feather="settings"></i>
-                                <span> Services </span>
-                                <span class="menu-arrow"></span>
-                            </a>
-                            <ul class="nav-second-level" aria-expanded="false">
-                                <li>
-                                    <a href="javascript:void(0);">Sub Services 1</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">Sub Services 2</a>
-                                </li>
-                            </ul>
                         </li>
 
                          <li>
                             <a href="#">
                                 <i data-feather="bookmark"></i>
-                                <span> Requirements </span>
+                                <span> Task -1 </span>
                             </a>
                         </li>
 
-                         <!-- <li>
+                         <li>
                             <a href="#">
                                 <i data-feather="bookmark"></i>
                                 <span> Task -1 </span>
                             </a>
-                        </li> -->
-                      
+                        </li>
+                       <li class="menu-title">Apps</li>
+                         <li>
+                            <a href="#">
+                                <i data-feather="bookmark"></i>
+                                <span> Task -1 </span>
+                            </a>
+                        </li>
+
+                         <li>
+                            <a href="#">
+                                <i data-feather="bookmark"></i>
+                                <span> Task -1 </span>
+                            </a>
+                        </li>
                        
                     </ul>
                 </div>
@@ -330,107 +283,56 @@ h2, .h2 {
                             <nav aria-label="breadcrumb" class="float-right mt-1">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Home</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Vendor Profile</li>
                                 </ol>
                             </nav>
-                            <h4 class="mb-1 mt-0">Dashboard</h4>
+                            <h4 class="mb-1 mt-0">Vendor Profile</h4>
                         </div>
                     </div>
                     <!-- breadcrumb -->
+
+                    <ul class="nav nav-pills navtab-bg nav-justified mb-4">
+                        <li class="nav-item">
+                            <a href="vendor-basic-details.html"  class="nav-link">
+                                <span class="d-block d-sm-none"><i class="uil-home-alt"></i></span>
+                                <span class="d-none d-sm-block">Basic Details</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <span class="d-block d-sm-none"><i class="uil-user"></i></span>
+                                <span class="d-none d-sm-block">Service Offered</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="upload_portfolio.html" class="nav-link">
+                                <span class="d-block d-sm-none"><i class="uil-envelope"></i></span>
+                                <span class="d-none d-sm-block">Upload Profile</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link active">
+                                <span class="d-block d-sm-none"><i class="uil-home-alt"></i></span>
+                                <span class="d-none d-sm-block">Portfolio</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="client-review.html" class="nav-link">
+                                <span class="d-block d-sm-none"><i class="uil-user"></i></span>
+                                <span class="d-none d-sm-block">Client Review</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#messages1" class="nav-link">
+                                <span class="d-block d-sm-none"><i class="uil-envelope"></i></span>
+                                <span class="d-none d-sm-block">Sales Review</span>
+                            </a>
+                        </li>
+                    </ul>
                     
                     <!-- main Content -->
-                    <div class="row mb-4">
-                        <div class=" col-xl-3">
-                            <div class="card-stats mb-4 mb-xl-0 card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col">
-                                            <h5 class="text-uppercase text-muted mb-1 card-title">Total Vendors</h5><span
-                                                class="h2 font-weight-bold ">1,200</span>
-                                        </div>
-                                        <div class="col-auto col">
-                                            <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
-                                                <i class="fas fa-users"></i>
-                                                </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-xl-3">
-                            <div class="card-stats mb-4 mb-xl-0 card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col">
-                                            <h5 class="text-uppercase text-muted mb-1 card-title">Verified Vendors</h5><span
-                                                class="h2 font-weight-bold ">800</span>
-                                        </div>
-                                        <div class="col-auto col">
-                                            <div class="icon icon-shape bg-success text-white rounded-circle shadow">
-                                                <i class="fas fa-user-check"></i>
-                                                </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-xl-3">
-                            <div class="card-stats mb-4 mb-xl-0 card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col">
-                                            <h5 class="text-uppercase text-muted mb-1 card-title">Title</h5><span
-                                                class="h2 font-weight-bold ">200</span>
-                                        </div>
-                                        <div class="col-auto col">
-                                            <div class="icon icon-shape bg-info text-white rounded-circle shadow"><i
-                                                    class="fas fa-chart-bar"></i></div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-xl-3">
-                            <div class="card-stats mb-4 mb-xl-0 card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col">
-                                            <h5 class="text-uppercase text-muted mb-1 card-title">Title</h5><span
-                                                class="h2 font-weight-bold ">400</span>
-                                        </div>
-                                        <div class="col-auto col">
-                                            <div class="icon icon-shape bg-warning text-white rounded-circle shadow"><i
-                                                    class="fas fa-chart-bar"></i></div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="row">
-                        <div class="col-xl-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title mt-0 mb-0 header-title">Column Chart </h5>
-                                    <div id="apex-column-2" class="apex-charts" dir="ltr"></div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-xl-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title mt-0 mb-0 header-title">Basic Bar Chart</h5>
-                                    <div id="apex-bar-1" class="apex-charts"></div>
-                                </div>
-                            </div>
-
-                        </div>
+                        
                     </div>
                     <!-- main Content -->
                    
@@ -455,20 +357,12 @@ h2, .h2 {
     <!-- END wrapper -->
     <!-- Vendor js -->
     <script src="assets/js/vendor.min.js"></script>
-    <script src="https://apexcharts.com/samples/assets/irregular-data-series.js"></script>
-    <script src="https://apexcharts.com/samples/assets/series1000.js"></script>
-    <script src="https://apexcharts.com/samples/assets/ohlc.js"></script>
-
-    <!-- third party:js -->
-    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
-   
+    <!-- optional plugins -->
+    <script src="assets/libs/moment/moment.min.js"></script>
     <!-- page js -->
     <script src="assets/js/pages/dashboard.init.js"></script>
     <!-- App js -->
     <script src="assets/js/app.min.js"></script>
-
-     <!-- init js -->
-     <script src="assets/js/pages/apexcharts.init.js"></script>
     
 
 </body>
