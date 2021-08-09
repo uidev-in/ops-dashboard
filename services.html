@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" integrity="sha512-DD6Lm09YDHzhW3K4eLJ9Y7sFrBwtCF+KuSWOLYFqKsZ6RX4ifCu9vWqM4R+Uy++aBWe6wD4csgQRzGKp5vP6tg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- plugins -->
+    <!-- <link href="assets/libs/flatpickr/flatpickr.min.css" rel="stylesheet" type="text/css" /> -->
+    <!-- App css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.16/datatables.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/libs/datatables/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/libs/datatables/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/libs/datatables/buttons.bootstrap4.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/sidebar.css"> -->
+    <link rel="stylesheet" href="assets/css/custom-theme.css">
+    <style type="text/css">
+    /* .left-side-menu {
+    
+                 top: 1px; 
+             }*/
+    .total_paginate {
+        position: absolute;
+        bottom: -44px;
+        right: 0px;
+    }
+
+    .total_entries {
+        position: absolute;
+        bottom: -25px;
+    }
+
+    i.custom-pencil {
+        position: absolute;
+        color: #222;
+        cursor: pointer !important;
+        left: 29px;
+        z-index: 9;
+    }
+
+    .table-striped tbody tr td:nth-of-type(3) {
+        min-width: 300px !important;
+    }
+
+    .table-striped tbody tr td:nth-of-type(4) {
+        min-width: 300px !important;
+    }
+ #bs-example-modal-lg label, #edit-modal label {
+    font-size: 14px;
+}
+    /*.table-striped tbody tr:nth-of-type(even)  {
+    background-color: #f7fafc;
+}*/
+    </style>
+</head>
+
+<body>
+    <!-- Begin page -->
+    <div id="wrapper">
+        <!-- Topbar Start -->
+        <div class="navbar navbar-expand flex-column flex-md-row navbar-custom fixed-top">
+            <div class="container-fluid">
+                <!-- LOGO -->
+                <a href="index.html" class="navbar-brand mr-0 mr-md-2 logo mb-2">
+                    <span class="logo-lg">
+                        <img src="assets/images/exmyb_logo.png" alt="ExMyB" width="100">
+                        <!-- <span class="d-inline h5 ml-1 text-logo">ExMyB</span> -->
+                    </span>
+                </a>
+                <ul class="navbar-nav bd-navbar-nav flex-row list-unstyled menu-left mb-0">
+                    <li class="">
+                        <button class="button-menu-mobile open-left disable-btn">
+                            <i data-feather="menu" class="menu-icon"></i>
+                            <i data-feather="x" class="close-icon"></i>
+                        </button>
+                    </li>
+                </ul>
+                <ul class="navbar-nav flex-row ml-auto d-flex list-unstyled topnav-menu float-right mb-0">
+                    <li class="dropdown notification-list" data-toggle="tooltip" data-placement="left" title="8 new unread notifications">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            <i data-feather="bell"></i>
+                            <span class="noti-icon-badge"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+                            <!-- item-->
+                            <div class="dropdown-item noti-title border-bottom">
+                                <h5 class="m-0 font-size-16">
+                                    <span class="float-right">
+                                        <a href="" class="text-dark">
+                                            <small>Clear All</small>
+                                        </a>
+                                    </span>Notification
+                                </h5>
+                            </div>
+                            <div class="slimscroll noti-scroll">
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item border-bottom">
+                                    <div class="notify-icon bg-primary"><i class="uil uil-user-plus"></i></div>
+                                    <p class="notify-details">New user registered.<small class="text-muted">5 hours ago</small>
+                                    </p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item border-bottom">
+                                    <div class="notify-icon">
+                                        <img src="assets/images/users/avatar-1.jpg" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <p class="notify-details">Karen Robinson</p>
+                                    <p class="text-muted mb-0 user-msg">
+                                        <small>Wow ! this admin looks good and awesome design</small>
+                                    </p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item border-bottom">
+                                    <div class="notify-icon">
+                                        <img src="assets/images/users/avatar-2.jpg" class="img-fluid rounded-circle" alt="" />
+                                    </div>
+                                    <p class="notify-details">Cristina Pride</p>
+                                    <p class="text-muted mb-0 user-msg">
+                                        <small>Hi, How are you? What about our next meeting</small>
+                                    </p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item border-bottom active">
+                                    <div class="notify-icon bg-success"><i class="uil uil-comment-message"></i> </div>
+                                    <p class="notify-details">Jaclyn Brunswick commented on Dashboard<small class="text-muted">1
+                                            min
+                                            ago</small></p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item border-bottom">
+                                    <div class="notify-icon bg-danger"><i class="uil uil-comment-message"></i></div>
+                                    <p class="notify-details">Caleb Flakelar commented on Admin<small class="text-muted">4 days
+                                            ago</small></p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-primary">
+                                        <i class="uil uil-heart"></i>
+                                    </div>
+                                    <p class="notify-details">Carlos Crouch liked
+                                        <b>Admin</b>
+                                        <small class="text-muted">13 days ago</small>
+                                    </p>
+                                </a>
+                            </div>
+                            <!-- All-->
+                            <a href="javascript:void(0);" class="dropdown-item text-center text-primary notify-item notify-all border-top">
+                                View all
+                                <i class="fi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="dropdown notification-list" data-toggle="tooltip" data-placement="left" title="Settings">
+                        <a href="javascript:void(0);" class="nav-link right-bar-toggle">
+                            <i data-feather="settings"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown notification-list align-self-center profile-dropdown">
+                        <a class="nav-link dropdown-toggle nav-user mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            <div class="media user-profile ">
+                                <img src="assets/images/users/avatar-7.jpg" alt="user-image" class="rounded-circle align-self-center" />
+                                <div class="media-body text-left">
+                                    <h6 class="pro-user-name ml-2 my-0">
+                                        <span>Shreyu N</span>
+                                        <span class="pro-user-desc text-muted d-block mt-1">Administrator </span>
+                                    </h6>
+                                </div>
+                                <span data-feather="chevron-down" class="ml-2 align-self-center"></span>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu profile-dropdown-items dropdown-menu-right">
+                            <a href="pages-profile.html" class="dropdown-item notify-item">
+                                <i data-feather="user" class="icon-dual icon-xs mr-2"></i>
+                                <span>My Account</span>
+                            </a>
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i data-feather="settings" class="icon-dual icon-xs mr-2"></i>
+                                <span>Settings</span>
+                            </a>
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i data-feather="help-circle" class="icon-dual icon-xs mr-2"></i>
+                                <span>Support</span>
+                            </a>
+                            <a href="pages-lock-screen.html" class="dropdown-item notify-item">
+                                <i data-feather="lock" class="icon-dual icon-xs mr-2"></i>
+                                <span>Lock Screen</span>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i data-feather="log-out" class="icon-dual icon-xs mr-2"></i>
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end Topbar -->
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="left-side-menu">
+            <div class="media user-profile mt-2 mb-2">
+                <img src="assets/images/users/avatar-7.jpg" class="avatar-sm rounded-circle mr-2" alt="Shreyu" />
+                <img src="assets/images/users/avatar-7.jpg" class="avatar-xs rounded-circle mr-2" alt="Shreyu" />
+                <div class="media-body">
+                    <h6 class="pro-user-name mt-0 mb-0">Sourabh</h6>
+                    <span class="pro-user-desc">Administrator</span>
+                </div>
+                <div class="dropdown align-self-center profile-dropdown-menu">
+                    <a class="dropdown-toggle mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        <span data-feather="chevron-down"></span>
+                    </a>
+                    <div class="dropdown-menu profile-dropdown">
+                        <a href="pages-profile.html" class="dropdown-item notify-item">
+                            <i data-feather="user" class="icon-dual icon-xs mr-2"></i>
+                            <span>My Account</span>
+                        </a>
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i data-feather="settings" class="icon-dual icon-xs mr-2"></i>
+                            <span>Settings</span>
+                        </a>
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i data-feather="help-circle" class="icon-dual icon-xs mr-2"></i>
+                            <span>Support</span>
+                        </a>
+                        <a href="pages-lock-screen.html" class="dropdown-item notify-item">
+                            <i data-feather="lock" class="icon-dual icon-xs mr-2"></i>
+                            <span>Lock Screen</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i data-feather="log-out" class="icon-dual icon-xs mr-2"></i>
+                            <span>Logout</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-content">
+                <!--- Sidemenu -->
+                <div id="sidebar-menu" class="slimscroll-menu">
+                    <ul class="metismenu" id="menu-bar">
+                        <li class="menu-title">Navigation</li>
+                        <li>
+                            <a href="#">
+                                <i data-feather="home"></i>
+                                <span class="badge badge-success float-right">1</span>
+                                <span> Dashboard </span>
+                            </a>
+                        </li>
+                        <li class="menu-title">Apps</li>
+                        <li>
+                            <a href="#">
+                                <i data-feather="bookmark"></i>
+                                <span> Task -1 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i data-feather="bookmark"></i>
+                                <span> Task -1 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i data-feather="bookmark"></i>
+                                <span> Task -1 </span>
+                            </a>
+                        </li>
+                        <li class="menu-title">Apps</li>
+                        <li>
+                            <a href="#">
+                                <i data-feather="bookmark"></i>
+                                <span> Task -1 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i data-feather="bookmark"></i>
+                                <span> Task -1 </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Sidebar -->
+                <div class="clearfix"></div>
+            </div>
+            <!-- Sidebar -left -->
+        </div>
+        <!-- Left Sidebar End -->
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row page-title">
+                        <div class="col-md-12">
+                            <nav aria-label="breadcrumb" class="float-right mt-1">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Vendor Profile</li>
+                                </ol>
+                            </nav>
+                            <h4 class="mb-1 mt-0">Vendor Profile</h4>
+                        </div>
+                    </div>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-pills navtab-bg nav-justified mb-4">
+                        <li class="nav-item">
+                            <a href="vendor-basic-details.html" class="nav-link">
+                                <span class="d-block d-sm-none"><i class="uil-home-alt"></i></span>
+                                <span class="d-none d-sm-block">Basic Details</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link active">
+                                <span class="d-block d-sm-none"><i class="uil-user"></i></span>
+                                <span class="d-none d-sm-block">Service Offered</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="upload_portfolio.html" class="nav-link">
+                                <span class="d-block d-sm-none"><i class="uil-envelope"></i></span>
+                                <span class="d-none d-sm-block">Upload Profile</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="portfolio.html" class="nav-link">
+                                <span class="d-block d-sm-none"><i class="uil-home-alt"></i></span>
+                                <span class="d-none d-sm-block">Portfolio</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="client-review.html" class="nav-link ">
+                                <span class="d-block d-sm-none"><i class="uil-user"></i></span>
+                                <span class="d-none d-sm-block">Client Review</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sales-review.html" class="nav-link">
+                                <span class="d-block d-sm-none"><i class="uil-envelope"></i></span>
+                                <span class="d-none d-sm-block">Sales Review</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class=" top_btn_div_2 mr-4 mb-3" style="float: right;">
+                        <div class=" top_btn_div" style="display: none;">
+                            <!-- first btn -->
+                            <!-- second btn -->
+                            <button type="button" class="btn btn-secondary  dropdown-toggle mr-2" data-toggle="dropdown" id="drop_4th" aria-haspopup="true" aria-expanded="false">
+                                Actions <i class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg></i> </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="drop_4th" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-58px, 39px, 0px);">
+                                <a class="dropdown-item first_delete" href="#">Delete</a>
+                                <a class="dropdown-item editable_btn" href="#">Edit Fields</a>
+                                <!-- <a class="dropdown-item " href="contact-form.html">Update Fields</a> -->
+                                <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                            </div>
+                        </div>
+                        <!-- first btn -->
+                        <button type="button" class="btn btn-secondary " data-toggle="modal" data-target="#bs-example-modal-lg"> Add Services </button>
+                    </div>
+                    <!-- start data table -->
+                    <div class="row page-title">
+                        <div class="col-md-12">
+                            <div class="container-fluid ">
+                                <div id="example_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                                    <table id="example" class="table table-striped table-bordered dataTable display nowrap" cellspacing="0" width="100%" role="grid" aria-describedby="example_info" style="width: 100%;">
+                                        <thead>
+                                            <tr role="row ">
+                                                <th class="name sorting_asc check_click ml-1 " tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 156px;">
+                                                    <div class="custom-control custom-checkbox ">
+                                                        <input type="checkbox" class="custom-control-input table_check" id="checkAll" name="data0" onblur="saveData(event,'name','2')"><label class="custom-control-label" for="checkAll"></label></div>
+                                                </th>
+                                                <th class="position sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 156px;">Service Name</th>
+                                                <th class="office sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 156px;">Level-1 Tag</th>
+                                                <th class="age sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 156px;">Level-2 Tag </th>
+                                                <th class="age sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 156px;">Level-3 Tag </th>
+                                                <th class="age sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 156px;">Min Price </th>
+                                                <th class="age sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 156px;">Max Price</th>
+                                                <th class="age sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 156px;">Notes</th>
+                                                <!-- <th class="start_date sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending" style="width: 156px;">Start date</th> -->
+                                                <!-- <th class="area sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending" style="width: 40px;">Start date</th> -->
+                                            </tr>
+                                        </thead>
+                                        <!-- <tfoot>
+                                                <tr>
+                                                    <th rowspan="1" colspan="1">checkbox</th>
+                                                    <th rowspan="1" colspan="1">Name</th>
+                                                    <th rowspan="1" colspan="1">Position</th>
+                                                    <th rowspan="1" colspan="1">Office</th>
+                                                    <th rowspan="1" colspan="1">Age</th>
+                                                    <th rowspan="1" colspan="1">Start date</th>
+                                                   
+                                                </tr>
+                                            </tfoot> -->
+                                        <tbody>
+                                            <tr id="row2" role="row" class="odd">
+                                                <td class="sorting_1">
+                                                    <div class="sorting_10">
+                                                        <a target="_blank" href="/crm/dashboard/lead-detail/44"> <i class="fa custom-pencil"></i></a>
+                                                        <div class="custom-control custom-checkbox ">
+                                                            <input type="checkbox" class="custom-control-input table_check" id="data_441" name="data_44" project-id="44" database-field="id" onblur="saveData(event,'name','2')"><label class="custom-control-label" for="data_441"></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="sorting_1"><input class="editable_data" type="text" name="data7" id="data7" value="Sales Training" onblur="saveData(event,'name','2')"><span style="display:none">Sales Training</span></td>
+                                                <td><input class="editable_data" type="text" name="data8" id="data8" value="Human Resources Service" disabled="disabled" onblur="saveData(event,'type','2')"><span style="display:none">Human Resources Service</span></td>
+                                                <td><input class="editable_data" type="text" name="data2" id="data2" value="Employee Management, Training,Counselling" disabled="disabled" onblur="saveData(event,'type',value)"><span style="display:none">Employee Management, Training,Counselling</span></td>
+                                                <td><input class="editable_data" type="text" name="data9" id="data9" value="Seles Training" disabled="disabled" onblur="saveData(event,'city','2')"><span style="display:none">Seles Training</span></td>
+                                                <td><input class="editable_data" type="text" name="data5" id="data5" value="2000" disabled="disabled" onblur="saveData(event,'dob',value)"><span style="display:none">2000</span>
+                                                </td>
+                                                <td><input class="editable_data" type="text" name="data5" id="data5" value="10000" max="2035-12-31" disabled="disabled" onblur="saveData(event,'dob',value)"><span style="display:none">10000</span>
+                                                </td>
+                                                <td ><a href="javascript:void(0)" class="text-dark"><i class="fa fa-eye" aria-hidden="true"></i> view</a></td>
+                                            </tr>
+                                            <tr id="row1" role="row" class="even">
+                                               <td class="sorting_1">
+                                                    <div class="sorting_10">
+                                                        <a target="_blank" href="/crm/dashboard/lead-detail/44"> <i class="fa custom-pencil"></i></a>
+                                                        <div class="custom-control custom-checkbox ">
+                                                            <input type="checkbox" class="custom-control-input table_check" id="data_442" name="data_44" project-id="44" database-field="id" onblur="saveData(event,'name','2')"><label class="custom-control-label" for="data_442"></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="sorting_1"><input class="editable_data" type="text" name="data7" id="data7" value="Sales Training" onblur="saveData(event,'name','2')"><span style="display:none">Sales Training</span></td>
+                                                <td><input class="editable_data" type="text" name="data8" id="data8" value="Human Resources Service" disabled="disabled" onblur="saveData(event,'type','2')"><span style="display:none">Human Resources Service</span></td>
+                                                <td><input class="editable_data" type="text" name="data2" id="data2" value="Employee Management, Training,Counselling" disabled="disabled" onblur="saveData(event,'type',value)"><span style="display:none">Employee Management, Training,Counselling</span></td>
+                                                <td><input class="editable_data" type="text" name="data9" id="data9" value="Seles Training" disabled="disabled" onblur="saveData(event,'city','2')"><span style="display:none">Seles Training</span></td>
+                                                <td><input class="editable_data" type="text" name="data5" id="data5" value="2000" disabled="disabled" onblur="saveData(event,'dob',value)"><span style="display:none">2000</span>
+                                                </td>
+                                                <td><input class="editable_data" type="text" name="data5" id="data5" value="10000" max="2035-12-31" disabled="disabled" onblur="saveData(event,'dob',value)"><span style="display:none">10000</span>
+                                                </td>
+                                                <td ><a href="javascript:void(0)" class="text-dark"><i class="fa fa-eye" aria-hidden="true"></i> view</a></td>
+                                            </tr>
+                                            <tr id="row1" role="row" class="even">
+                                                <td class="sorting_1">
+                                                    <div class="sorting_10">
+                                                        <a target="_blank" href="/crm/dashboard/lead-detail/44"> <i class="fa custom-pencil"></i></a>
+                                                        <div class="custom-control custom-checkbox ">
+                                                            <input type="checkbox" class="custom-control-input table_check" id="data_473" name="data_47" project-id="44" database-field="id" onblur="saveData(event,'name','2')"><label class="custom-control-label" for="data_473"></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="sorting_1"><input class="editable_data" type="text" name="data1" id="data1" value="sourabh" disabled="disabled" onblur="saveData(event,'name',value)"><span style="display:none">sourabh</span></td>
+                                                <td><input type="text" class="editable_data" name="data2" id="data2" value=" System Architect" disabled="disabled" onblur="saveData(event,'type',value)"><span style="display:none">System Architect</span></td>
+                                                <td><input class="editable_data" type="text" name="data2" id="data2" value="Exmyb" disabled="disabled" onblur="saveData(event,'type',value)"><span style="display:none">System Architect</span></td>
+                                                <td><input class="editable_data" type="text" name="data3" id="data3" value="1234567890" disabled="disabled" onblur="saveData(event,'age',value)"><span style="display:none">1234567890</span></td>
+                                                <td><input class="editable_data" type="date" name="data5" id="data5" value="2018-07-22" min="2018-01-01" max="2035-12-31" disabled="disabled" onblur="saveData(event,'dob',value)"><span style="display:none">2011/04/25</span>
+                                                </td>
+                                                <td><input class="editable_data" type="date" name="data5" id="data5" value="2018-07-22" min="2018-01-01" max="2035-12-31" disabled="disabled" onblur="saveData(event,'dob',value)"><span style="display:none">2011/04/25</span>
+                                                </td>
+                                                <td ><a href="javascript:void(0)" class="text-dark"><i class="fa fa-eye" aria-hidden="true"></i> view</a></td>
+                                            </tr>
+                                            <tr id="row1" role="row" class="even">
+                                                <td class="sorting_1">
+                                                    <div class="sorting_10">
+                                                        <a target="_blank" href="/crm/dashboard/lead-detail/44"> <i class="fa custom-pencil"></i></a>
+                                                        <div class="custom-control custom-checkbox ">
+                                                            <input type="checkbox" class="custom-control-input table_check" id="data_50" name="data_50" project-id="44" database-field="id" onblur="saveData(event,'name','2')"><label class="custom-control-label" for="data_50"></label></div>
+                                                    </div>
+                                                </td>
+                                                <td class="sorting_1"><input class="editable_data" type="text" name="data1" id="data1" value="Nishant" disabled="disabled" onblur="saveData(event,'name',value)"><span style="display:none">Nishant</span></td>
+                                                <td><input type="text" class="editable_data" name="data2" id="data2" value=" System Architect " disabled="disabled" onblur="saveData(event,'type',value)"><span style="display:none">System Architect</span></td>
+                                                <td><input class="editable_data" type="text" name="data2" id="data2" value="Exmyb" disabled="disabled" onblur="saveData(event,'type',value)"><span style="display:none">System Architect</span></td>
+                                                <td><input class="editable_data" type="text" name="data3" id="data3" value="1234567890" disabled="disabled" onblur="saveData(event,'age',value)"><span style="display:none">1234567890</span></td>
+                                                <td><input class="editable_data" type="date" name="data5" id="data5" value="2018-07-22" min="2018-01-01" max="2035-12-31" disabled="disabled" onblur="saveData(event,'dob',value)"><span style="display:none">2011/04/25</span>
+                                                </td>
+                                                <td><input class="editable_data" type="date" name="data5" id="data5" value="2018-07-22" min="2018-01-01" max="2035-12-31" disabled="disabled" onblur="saveData(event,'dob',value)"><span style="display:none">2011/04/25</span>
+                                                </td>
+                                                <td ><a href="javascript:void(0)" class="text-dark"><i class="fa fa-eye" aria-hidden="true"></i> view</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- content -->
+      
+       <div class="modal fade" id="bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" style="display: none;" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="myLargeModalLabel">Add Services</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body px-4 py-5">
+                            <form class="profile_section mt-3 needs-validation " novalidate>
+                                <div class="row modal_from ">
+                                    <div class="col">
+
+                                    
+                                     
+                                         <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="service_name">Service Name</label>
+                                            <div class="col-lg-8">
+                                                <input type="number" name="service_name" class="form-control form-control-alternative" id="service_name" placeholder="Enter Your Service Name " required>
+                                                <div class="valid-feedback"> Looks good!</div>
+                                            </div>
+                                        </div>
+
+
+                                       
+                                       <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="level-1">Level-2 Tag</label>
+                                            <div class="col-lg-8">
+                                            <input type="text" name="level-2" class="form-control form-control-alternative" id="level-2" placeholder="Enter Level-2 Tag" required>
+                                            <div class="valid-feedback"> Looks good!</div>
+                                            </div>
+                                        </div>
+
+
+                                         <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="min_num">Min Num.</label>
+                                            <div class="col-lg-8">
+                                            <input type="text" name="min_num" class="form-control form-control-alternative" id="min_num" placeholder="Enter Min Num." required>
+                                            <div class="valid-feedback"> Looks good!</div>
+                                            </div>
+                                        </div>
+
+                                         <!--  <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="verified">Verified </label>
+                                            <div class="col-lg-8">
+                                                <input type="checkbox" name="" class="form-control form-control-alternative modal_check" id="verified"  required>
+                                                <div class="valid-feedback"> Looks good!</div>
+                                            </div>
+                                        </div> -->
+
+                                    </div>
+
+
+                                    <div class="col">
+
+                                           <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="level-1">Level-1 Tag</label>
+                                            <div class="col-lg-8">
+                                            <input type="text" name="level-1" class="form-control form-control-alternative" id="level-1" placeholder="Enter Level-1 Tag" required>
+                                            <div class="valid-feedback"> Looks good!</div>
+                                            </div>
+                                        </div>
+                                       
+                                     <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="level-3">Level-3 Tag</label>
+                                            <div class="col-lg-8">
+                                            <input type="text" name="level-3" class="form-control form-control-alternative" id="level-3" placeholder="Enter Level-3 Tag" required>
+                                            <div class="valid-feedback"> Looks good!</div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group row">
+                                            <label class="col-lg-4 col-form-label" for="max_num">Max Num.</label>
+                                            <div class="col-lg-8">
+                                            <input type="text" name="max_num" class="form-control form-control-alternative" id="max_num" placeholder="Enter Max Num." required>
+                                            <div class="valid-feedback"> Looks good!</div>
+                                            </div>
+                                        </div>
+                                       
+                                      
+
+
+                                    </div>
+                                   <div class="col-md-12 text-center mt-3"><button type="submit" class="btn btn-info">Submit</button></div>
+
+                                </div>
+
+                            </form>
+                        
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div>
+
+           
+            <!-- Footer Start -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            2021 &copy; ExMyB. All Rights Reserved.
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end Footer -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- END wrapper -->
+    <!-- Vendor js -->
+    <script src="assets/js/vendor.min.js"></script>
+    <!-- optional plugins -->
+    <script src="assets/libs/moment/moment.min.js"></script>
+    <!-- page js -->
+    <script src="assets/js/pages/dashboard.init.js"></script>
+    <!-- App js -->
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/libs/datatables/jquery.dataTables.min.js"></script>
+    <script src="assets/libs/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/libs/datatables/dataTables.responsive.min.js"></script>
+    <script src="assets/libs/datatables/responsive.bootstrap4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script id="rendered-js">
+    var checked_count = 0;
+    $(document).ready(function() {
+        $('#example').DataTable();
+        $('#example').DataTable({
+            scrollX: true,
+
+            fixedHeader: false,
+            initComplete: onDataTableInitComplete,
+            dom: 'frtip'
+            // ... : ...
+        });
+
+
+
+    });
+
+    // for all check click
+    $(".check_click").on('click', '#checkAll', function() {
+        $(".table_check").prop('checked', $(this).prop('checked'));
+
+        if ($(this).prop("checked") == true) {
+
+            $('.top_btn_div').fadeIn();
+        } else if ($(this).prop("checked") == false) {
+            $('.top_btn_div').fadeOut();
+        }
+
+
+    });
+    //    for bottom check click
+    $(".sorting_1").on('click', '.table_check', function() {
+
+        if ($(this).prop("checked") == true) {
+            $('.top_btn_div').fadeIn();
+        } else if ($(this).prop("checked") == false) {
+            // checked_count-=1;
+            // if (checked_count==0){
+            $('.top_btn_div').fadeOut();
+        }
+
+        // var id = $(this).attr('id')
+        // alert(id);
+        var elee = $(this).parent().parent().parent();
+        //    console.log("ELee",elee)
+
+        // for edit btn click
+        $('.editable_btn').click(function(ele) {
+            var inputValue = $(elee).find('input,select');
+            $(inputValue).removeAttr('disabled');
+            $(inputValue).addClass("form_group");
+
+            $(inputValue).on("keyup", function() {
+                if ($(inputValue).val() == "") {
+                    $(inputValue).addClass("form_group");
+                } else {
+                    $(inputValue).removeClass("form_group");
+                }
+            });
+            console.log('second jsjs', elee);
+
+        });
+    });
+
+    $(document).ready(function() {
+        $('.editable_data').attr('disabled', 'disabled');
+
+    });
+
+    $("#data5").on("change", function() {
+        alert($(this).val());
+    });
+
+    function saveData(event, fieldname, primaryid) {
+        console.log($('#' + event.target.id).val());
+        console.log(fieldname);
+        console.log(primaryid);
+    }
+    </script>
+    <script>
+    $(document).ready(function() {
+        $('.dataTables_info').parent().addClass('total_entries');
+        $('.dataTables_paginate').parent().addClass('total_paginate');
+        $('.dataTables_length').parent().addClass('total_length');
+        $('.dataTables_filter').parent().addClass('total_filter');
+
+        // $(".sorting_1").hover(function() {
+        //     $(this).children().children().toggleClass("fa-pencil");
+        // });
+
+        $('#sidebarCollapse').on('click', function() {
+            $('#sidebar').toggleClass('active');
+        });
+    });
+
+    $(document).ready(function() {
+        $("tbody").on('mouseover', '.sorting_10', function() {
+            $('.fa-pencil').removeClass(' fa-pencil');
+            $(this).find('.custom-pencil').toggleClass("fa-pencil");
+            // $('.custom-control-label').removeClass('fa-pencil');
+
+        });
+
+    });
+
+    //------------- delete alert
+
+    document.querySelector(".first_delete").addEventListener('click', function() {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'Deleted!',
+                    'Your file has been deleted.',
+                    'success'
+                )
+            }
+        })
+    });
+
+    document.querySelector(".logout_modal").addEventListener('click', function() {
+        Swal.fire({
+            title: 'Are you sure?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, Logout it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'Logout!',
+
+                    'success'
+                )
+            }
+        })
+    });
+    </script>
+</body>
+
+</html>

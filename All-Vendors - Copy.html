@@ -51,15 +51,6 @@ i.custom-pencil {
     z-index: 9;
   }
 
-  #bs-example-modal-lg label, #edit-modal label {
-    font-size: 14px;
-}
-.modal_check{
-    font-size: 3px !important;
-    margin-top: 7px;
-    margin-left: -103px;
-}
-
     </style>
 </head>
 
@@ -319,7 +310,7 @@ i.custom-pencil {
                             <h4 class="mb-1 mt-0">Vendor Profile</h4>
                         </div>
                     </div>
-                    <div class=" top_btn_div_2 mr-4 mb-3" style="float: right;">
+                    <div class=" top_btn_div_2 mr-5 mb-3" style="float: right;">
                         <div class=" top_btn_div" style="display: none;">
                             <!-- first btn -->
                             <!-- second btn -->
@@ -338,7 +329,7 @@ i.custom-pencil {
                           
                         </div>
                         <!-- first btn -->
-                        <button type="button" class="btn btn-secondary " data-toggle="modal" data-target="#bs-example-modal-lg"> Create Task </button>
+                        <button type="button" class="btn btn-secondary   mr-2" data-toggle="modal" data-target="#bs-example-modal-lg"> Create Task </button>
                     </div>
                     <!-- start data table -->
                     <div class="row page-title">
@@ -575,100 +566,6 @@ i.custom-pencil {
                     </div>
                 </div>
             </div> <!-- content -->
-
-      <div class="modal fade" id="bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" style="display: none;" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="myLargeModalLabel">Add Task</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                        <div class="modal-body px-4 py-5">
-                            <form class="profile_section mt-3 needs-validation " novalidate>
-                                <div class="row modal_from ">
-                                    <div class="col">
-
-                                      <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="contact_firstname">User Id</label>
-                                            <div class="col-lg-8"> 
-                                            <input type="text" name="contact_User" class="form-control form-control-alternative" id="contact_firstname" placeholder="Enter Your User Id" required>
-                                            <div class="valid-feedback"> Looks good!</div>
-                                            </div>
-                                        </div>
-
-                                     
-
-                                         <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="brnad_name">Brand Name</label>
-                                            <div class="col-lg-8">
-                                                <input type="number" name="Brand Name" class="form-control form-control-alternative" id="Brand Name" placeholder="Enter Your Brand Name " required>
-                                                <div class="valid-feedback"> Looks good!</div>
-                                            </div>
-                                        </div>
-
-
-                                       
-
-
-                                         <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="edit_phone">Created </label>
-                                            <div class="col-lg-8">
-                                                <input type="date" name="date" class="form-control form-control-alternative" id="date" placeholder="Enter Create Date" required>
-                                                <div class="valid-feedback"> Looks good!</div>
-                                            </div>
-                                        </div>
-
-                                          <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="verified">Verified </label>
-                                            <div class="col-lg-8">
-                                                <input type="checkbox" name="" class="form-control form-control-alternative modal_check" id="verified"  required>
-                                                <div class="valid-feedback"> Looks good!</div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-
-                                    <div class="col">
-
-                                           <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="account_name">Name</label>
-                                            <div class="col-lg-8">
-                                            <input type="text" name="_name" class="form-control form-control-alternative" id="_name" placeholder="Enter Your Name" required>
-                                            <div class="valid-feedback"> Looks good!</div>
-                                            </div>
-                                        </div>
-                                       
-                                     <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="edit_phone">Phone</label>
-                                            <div class="col-lg-8">
-                                                <input type="number" name="edit_phone" class="form-control form-control-alternative" id="edit_phone" placeholder="Enter Your Phone No." required>
-                                                <div class="valid-feedback"> Looks good!</div>
-                                            </div>
-                                        </div>
-                                       
-                                         <div class="form-group row">
-                                            <label class="col-lg-4 col-form-label" for="update_time">Updated</label>
-                                            <div class="col-lg-8">
-                                                <input type="number" name="update_time" class="form-control form-control-alternative" id="update_time" placeholder="Enter Update Time." required>
-                                                <div class="valid-feedback"> Looks good!</div>
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                   <div class="col-md-12 text-center mt-3"><button type="submit" class="btn btn-info">Submit</button></div>
-
-                                </div>
-
-                            </form>
-                        
-                    </div><!-- /.modal-content -->
-                </div><!-- /.modal-dialog -->
-            </div>
-
             <!-- Footer Start -->
             <footer class="footer">
                 <div class="container-fluid">
